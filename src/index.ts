@@ -2,7 +2,7 @@ import "reflect-metadata";
 import express from "express";
 import { ApolloServer } from "apollo-server-express";
 import { buildSchema } from "type-graphql";
-import { HelloWorldResolver } from "./resolvers/HelloWorldResolver";
+import { HelloWorldResolver } from "@resolvers/HelloWorldResolver";
 const port = process.env.PORT || 8888;
 (async () => {
     const app = express();
