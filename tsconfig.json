@@ -28,6 +28,10 @@
       "baseUrl": ".",
       "paths": {
         "@resolvers/*": ["src/resolvers/*"],
+        "@services/*": ["src/services/*"],
+        "@constants/*": ["src/constants/*"],
+        "@interfaces/*": ["src/interfaces/*"],
+        "@local/*": ["./*"],
       }
     },
     "exclude": [
@@ -35,6 +39,7 @@
     ],
     "include": [
       "./src/**/*.tsx",
-      "./src/**/*.ts"
+      "./src/**/*.ts",
+      "inversify.config.ts"
     ]
   }
